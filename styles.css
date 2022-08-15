@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(rgb(77, 0, 128), rgb(56, 13, 183));
+    color: lavender;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: rgb(105, 178, 255);
+    color: lavender;
+    padding: 0.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+.button:hover {
+    background-color: rebeccapurple;
+    box-shadow: 2px 2px 5px rgba(36, 0, 75, 0.522);
+    
+}
+
+.group-members {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: lavender;
+    color: rgb(77, 0, 128);
+    border-radius: 5px;
+    width: 400px;
+    transition: all 0.25s ease-in-out;
+}
+
+.member:hover {
+    background-color:rgb(130, 85, 160);
+    color: lavender;
+    transform: scale(1.15);
+}
+
+
+.member__picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* media query for medium and large screens (tablets and desktop) */
+@media screen and (min-width: 720px) {
+    .group-members {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .member {
+        margin: 1rem;
+    }
+}
+
+
+/* Second page styles */
+.course-table {
+    background-color: rgba(25, 0, 43, 0.205);
+    padding: 1rem;
+    width: 100%;
+}
+
+.course-table th {
+    background-color: lavender;
+    color: rgb(80, 80, 80);
+    padding: 0.1rem 0.2rem;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(102, 51, 153, 0.52);
+}
+
+td {
+    padding: 1rem 0.25rem;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: space-around;
+}
